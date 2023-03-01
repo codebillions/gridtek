@@ -1,0 +1,535 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Unbounded', cursive;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: rgb(224, 191, 207);
+    }
+
+    h3 {
+        color: rgb(194, 74, 134);
+    }
+
+    /* navbar */
+
+    nav {
+        padding: 20px;
+        background: none;
+    }
+
+    nav .logo {
+        width: 150px;
+    }
+
+    nav button {
+        box-shadow: none !important;
+    }
+
+
+    #offcanvasNavbar {
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        border: none;
+        border-radius: 30px 0 0 30px;
+    }
+
+    nav .navbar-munu ul li a {
+        transition: 0.5s;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav .navbar-munu ul li a:hover {
+        border: none;
+        border-bottom: 2px rgb(194, 74, 134) solid;
+        width: 80px;
+        margin-left: 10px;
+        color: rgb(209, 162, 185);
+    }
+
+    /* section 1 host-div */
+    .lead-section {
+        width: 100%;
+        height: 100vh;
+        background-image: url("image/validate.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .lead-section .lead-text-box .lead-text h1 {
+        font-size: 95px;
+        padding-top: 130px;
+    }
+
+    .lead-section .lead-text-box .lead-text p a img {
+        width: 35px;
+        margin-top: 25px;
+        filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);
+    }
+
+    .follower-section {
+        background-image: url("image/landscape bg.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: fit-content;
+
+    }
+
+    .follower-section .follower-box .follower-text h3 {
+
+        margin-top: 50px;
+    }
+
+
+    /* FOOTER */
+    /* NEWSLETTER */
+    .footer-section {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .footer-section form label {
+        color: white;
+        margin-top: 50px;
+    }
+
+    .footer-section form input {
+        border: none;
+        border-bottom: 2px solid white;
+        border-radius: none;
+        background: none;
+        outline: none;
+        color: rgb(185, 180, 180);
+        transition: 0.5s;
+    }
+
+    .footer-section form input:focus {
+        background: none;
+        border-radius: none;
+        box-shadow: none !important;
+        outline: none !important;
+        border-bottom: 2px solid rgb(112, 6, 116);
+    }
+
+    /* contact */
+    footer .contact-div img {
+        width: 250px;
+    }
+
+    footer .social .links {
+        margin-left: 130px;
+        margin-top: 30px;
+    }
+
+    footer .social .links img {
+        filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);
+        width: 25px;
+        margin-right: 20px;
+        transition: 0.5s;
+    }
+
+    footer .social .links img:hover {
+        filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
+        width: 27px;
+    }
+
+
+
+    /* Responsive */
+
+    /* medium screen */
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .lead-section {
+            height: 50vh;
+        }
+
+        .lead-section .lead-text-box .lead-text h1 {
+            font-size: 80px;
+            padding-top: 90px;
+        }
+
+        /* section2 */
+        .follower-section {
+            background-image: url("image/portrait bg.jpg");
+        }
+
+        /* footer */
+        footer .contact-div img {
+            width: 170px;
+        }
+
+        footer .social .links {
+            margin-left: 70px;
+        }
+
+    }
+
+    /* tablet view */
+    @media all and (max-width: 768px) and (max-height: 1024px) {
+        .lead-section {
+            height: 50vh;
+        }
+
+        .lead-section .lead-text-box .lead-text h1 {
+            font-size: 70px;
+            padding-top: 90px;
+        }
+
+        /* section2 */
+        .follower-section {
+            background-image: url("image/portrait bg.jpg");
+        }
+
+        /* footer */
+        footer .social .links {
+            margin-left: 30px;
+        }
+
+    }
+
+    /* LANDSCAPE VIEW*/
+    @media all and (max-width: 1024px) and (max-height: 768px) {
+        .lead-section {
+            height: 60vh;
+        }
+
+        .lead-section .lead-text-box .lead-text h1 {
+            font-size: 75px;
+            padding-top: 90px;
+        }
+
+        /* footer */
+
+        footer .social .links {
+            margin-left: 83px;
+        }
+
+    }
+
+
+
+    /* Large Mobile :480px. */
+    @media only screen and (max-width: 767px) {
+        .lead-section {
+            background-image: url("image/validate responsive.jpg");
+            height: 100vh;
+        }
+
+        .lead-section .lead-text-box .lead-text h1 {
+            font-size: 55px;
+            padding-top: 140px;
+        }
+
+        /* section2 */
+        .follower-section {
+            background-image: url("image/portrait bg.jpg");
+        }
+
+        /* footer */
+        footer .contact-div img {
+            width: 170px;
+        }
+
+        footer .social .links {
+            margin-left: 110px;
+        }
+
+
+    }
+
+
+    /* phone view */
+    @media all and (max-width: 400px) and (max-height: 667px) {
+        .lead-section .lead-text-box .lead-text h1 {
+            font-size: 50px;
+            padding-top: 140px;
+        }
+
+        /* footer */
+        footer .contact-div img {
+            width: 170px;
+        }
+
+        footer .social .links {
+            margin-left: 63px;
+        }
+    }
+
+
+    /* LANDSCAPE VIEW */
+    @media all and (max-width: 667px) and (max-height: 400px) {
+        .lead-section .lead-text-box .lead-text h1 {
+            font-size: 50px;
+            padding-top: 50px;
+        }
+
+        /* footer */
+        footer .contact-div img {
+            width: 170px;
+        }
+
+        footer .social .links {
+            margin-left: 200px;
+        }
+    }
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIDTEK</title>
+</head>
+<!-- web logo -->
+<link rel="icon" href="image/icon.jpg" class="img-fluid">
+
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/aos.css">
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#"><img src="image/logo.png" class="img-fluid"></a>
+            <button style="filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);" class="navbar-toggler"
+                type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <!-- <span class="navbar-toggler-icon text-white"></span> -->
+                <img src="image/menu.svg" class="img-fluid">
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white mx-4 mt-3" id="offcanvasNavbarLabel">GRIDTEK</h5>
+                    <button style="filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);" type="button"
+                        class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body navbar-munu">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 m-4">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="gridtek.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="listing.html">Listing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="hosting.html">Hosting</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="validating.html">Validating</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#contact">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- section 1 host-div-->
+    <section class="container-fluid lead-section">
+
+        <div class="row p-5 lead-text-box">
+
+            <div class="col-md-12 lead-text mt-5">
+                <h1 class="text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+                    data-aos-once="true">Validating</h1>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
+                    data-aos-once="true">validating / <a class="text-decoration-none text-white"
+                        href="gridtek.html">Home</a>
+                </p>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
+                    data-aos-once="true"><a href="#follower"><img src="image/arrow-down-circle.svg" alt="img-fluid"></a>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- section-2 text -->
+    <section id="follower" class="container-fluid follower-section">
+
+        <div class="row p-5 follower-box">
+
+            <div class="col-md-12 follower-text">
+
+                <h3 class="text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+                    data-aos-once="true">Active</h3>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
+                    data-aos-once="true"> We are more than a validator, we are Gridtek!</p>
+
+                <p class="text-center" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
+                    data-aos-once="true">
+                    Gridtek is positioned to be a leader in the Crypto Market. We understand business and we understand
+                    technology. This
+                    blend of expertise allows us to be more than just a Validator that verifies transactions on a
+                    blockchain. We are able to
+                    both analyze and craft proposals with an understanding of its impact in relation to the project's
+                    stated goals. This
+                    allows us to be the vanguard of our community that delegates with us.
+                    We protect your position in a given project by making sure that our collective vote puts our needs
+                    and objectives at the
+                    center of all decision making. What good is it to have a voice if you do not speak up? What good is
+                    it to have knowledge
+                    if you don’t improve your environment? Delegate with us, we are not afraid to speak up and educate
+                    the community on the
+                    path forward. <br> <br>
+
+                    1. Terra Luna Classic (LUNC) (Active) <br><br>
+                    2. Validating Blockchain (Coming Soon) <br><br>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- section 5 newslettter and contact -->
+    <footer class="contianer-fuid footer-section bg-dark p-3">
+
+        <h1 class="text-center pt-5">Subscribe To Our Newsletter</h1>
+
+        <form action="" method="" class="form g-3 row mx-5">
+
+            <div class="col-md-4">
+                <label for="Name" class="form-label">Full Name</label>
+                <input name="fullname" type="text" required class="form-control" id="Name" placeholder="Allen Robert">
+            </div>
+
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email</label>
+                <input name="Email" type="email" required class="form-control" id="Email"
+                    placeholder="example@gmail.com">
+            </div>
+
+            <div class="col-md-4">
+                <label for="Number" class="form-label">Phone Number</label>
+                <input name="number" type="tell" required class="form-control" id="Number"
+                    placeholder="(+000) 000 000 0000">
+
+            </div>
+
+            <div class="cl-md-12">
+                <button type="submit" class="btn btn-sm" style="background-image: url('image/landscape\ bg.jpg');
+                        background-size: cover;
+                        background-position: center;">
+                    <h4 class="text-white">Subscribe</h4>
+                </button>
+            </div>
+
+        </form>
+
+        <h1 id="contact-us" class="text-center mt-5">Contact US</h1>
+
+        <div id="contact" class="row m-5">
+
+            <div class="col-md-4 contact-div">
+
+                <p class="text-center"><img src="image/logo.png" class="img-fluid"></p>
+
+                <h3 class="text-center mt-3">Get In Iouch</h3>
+                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                        href="Hello@gridtek.com">Hello@gridtek.com</a>
+                </p>
+                <p style="color: rgb(202, 195, 195);" class=" text-center">Copyright &copy;
+                    <script> document.write( new Date().getFullYear() ); </script>
+                    Gridtek LLC. All Rights Reserved.
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center mt-3">Popular Tags</h3>
+                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                        href="#">Metaverse</a>
+                </p>
+
+                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                        href="#">Tokenomics</a>
+                </p>
+
+                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                        href="#">Technology</a>
+                </p>
+
+                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                        href="#">Security</a>
+                </p>
+
+                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);" href="#">
+                        Crypto</a>
+                </p>
+
+                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                        href="#">Blockchain</a>
+                </p>
+
+            </div>
+
+            <div class="col-md-4 social">
+                <h3 class="text-center mt-3">Follow Us</h3>
+
+                <div class="links">
+                    <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
+                    <a href="#"><img src="image/twitter.svg" class="img-fluid"></a>
+                    <a href="#"><img src="image/telegram.svg" class="img-fluid"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/gridtek.js"></script>
+</body>
+
+</html>
+
+
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/gridtek.js"></script>
+</body>
+
+</html>
