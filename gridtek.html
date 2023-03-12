@@ -51,10 +51,10 @@
 
     nav .navbar-munu ul li a:hover {
         border: none;
-        border-bottom: 2px rgb(194, 74, 134) solid;
+        border-bottom: 2px rgb(164, 159, 208) solid;
         width: 80px;
         margin-left: 10px;
-        color: rgb(209, 162, 185);
+        color: rgb(164, 159, 208);
     }
 
     /* section-1 */
@@ -62,7 +62,7 @@
     .section-1 {
         width: 100%;
         height: 100vh;
-        background-image: url('image/verse.jpg');
+        background-image: url('image/lc bg.jpg');
         background-size: cover;
         background-position: center;
     }
@@ -78,8 +78,8 @@
     }
 
     .display .tex-container {
-        background: rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3px);
         border: none;
         border-radius: 30px 30px 30px 30px;
         margin-top: 150px;
@@ -103,7 +103,7 @@
     .about-section {
         width: 100%;
         height: fit-content;
-        background-image: url("image/landscape bg.jpg");
+        background: black;
         background-position: center;
         background-size: cover;
     }
@@ -114,20 +114,23 @@
     }
 
 
-    /* feature section */
+    /* featu: ;re section */
     .feature-section {
         width: 100%;
         height: fit-content;
         padding: 50px;
+        background-image: url("image/landscape\ bg.jpg");
+        background-size: cover;
+        background-position: center;
     }
 
     .feature-section h1 {
         text-align: center;
-        color: rgb(71, 3, 54);
+        color: white;
     }
 
     .feature-section p {
-        color: rgb(109, 8, 84);
+        color: rgb(192, 185, 190);
     }
 
     .feature-section .f-row .f-box .blur {
@@ -157,6 +160,7 @@
     .footer-section form label {
         color: white;
         margin-top: 50px;
+        background: black;
     }
 
     .footer-section form input {
@@ -174,7 +178,7 @@
         border-radius: none;
         box-shadow: none !important;
         outline: none !important;
-        border-bottom: 2px solid rgb(112, 6, 116);
+        border-bottom: 2px solid rgb(20, 9, 56);
     }
 
     /* contact */
@@ -242,7 +246,7 @@
         /* About section */
 
         .about-section {
-            background-image: url("image/portrait bg.jpg");
+            background: black;
 
         }
 
@@ -308,9 +312,9 @@
         /* About section */
 
         .about-section {
-            background-image: url("image/portrait bg.jpg");
+            /* background-image: url("image/portrait bg.jpg");
             background-size: cover;
-            background-position: center;
+            background-position: center; */
 
         }
 
@@ -377,12 +381,7 @@
 
         /* About section */
 
-        .about-section {
-            background-image: url("image/portrait bg.jpg");
-            background-size: cover;
-            background-position: center;
-
-        }
+        /* .about-section {} */
 
         .about-section .about-row .about-text h3 {
             margin-top: 50px;
@@ -413,7 +412,7 @@
 
         .section-1 {
             height: fit-content;
-            background-image: url("image/verse responsive.jpg");
+            background-image: url("image/pt bg.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -450,13 +449,13 @@
 
         /* About section */
 
-        .about-section {
+        /* .about-section {
             background-image: url("image/portrait bg.jpg");
             background-size: cover;
             background-position: center;
             text-align: center;
 
-        }
+        } */
 
         .about-section .about-row .about-text h3 {
             margin-top: 30px;
@@ -510,11 +509,11 @@
 
         /* About section */
 
-        .about-section {
+        /* .about-section {
             background-image: url("image/portrait bg.jpg");
-            /* text-align: center; */
+            text-align: center; 
 
-        }
+        } */
 
         .about-section .about-row .about-text h3 {
             margin-top: 0;
@@ -536,7 +535,7 @@
     @media all and (max-width: 667px) and (max-height: 400px) {
         .section-1 {
             height: fit-content;
-            background-image: url("image/verse.jpg");
+            background-image: url("image/lc bg.jpg");
         }
 
         .text h1 {
@@ -601,6 +600,10 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/aos.css">
+
+    <!-- cookie  -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body>
@@ -637,6 +640,14 @@
 
                         <li class="nav-item">
                             <a class="nav-link " href="validating.html">Validating</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="signin.html">Signin</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="signup.html">Signup</a>
                         </li>
 
                         <li class="nav-item">
@@ -719,7 +730,7 @@
     </section>
 
     <!-- section 3 features -->
-    <section class="container-fluid bg-white feature-section">
+    <section class="container-fluid feature-section">
 
         <h1 class="text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
             FEATURES</h1>
@@ -776,7 +787,7 @@
     </section>
 
     <!-- section 5 newslettter and contact -->
-    <footer class="contianer-fuid footer-section bg-dark p-3">
+    <footer class="contianer-fuid footer-section bg-black p-3">
 
         <h1 class="text-center pt-5">Subscribe To Our Newsletter</h1>
 
@@ -818,9 +829,15 @@
 
                 <p class="text-center"><img src="image/logo.png" class="img-fluid"></p>
 
-                <h3 class="text-center mt-3">Get In Iouch</h3>
+                <h3 class="text-center mt-3 text-white">Get In Iouch</h3>
                 <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="Hello@gridtek.com">Hello@gridtek.com</a>
+                </p>
+
+                <p class="text-center">
+                    <a style="text-decoration: none; color: rgb(202, 195, 195);"
+                        href="https://www.freeprivacypolicy.com/live/a15513a2-d266-438a-9539-b7916fb1d889">privacy and
+                        policy</a>
                 </p>
                 <p style="color: rgb(202, 195, 195);" class=" text-center">Copyright &copy;
                     <script> document.write( new Date().getFullYear() ); </script>
@@ -830,7 +847,7 @@
             </div>
 
             <div class="col-md-4">
-                <h3 class="text-center mt-3">Popular Tags</h3>
+                <h3 class="text-center mt-3 text-white">Popular Tags</h3>
                 <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="#">Metaverse</a>
                 </p>
@@ -858,7 +875,7 @@
             </div>
 
             <div class="col-md-4 social">
-                <h3 class="text-center mt-3">Follow Us</h3>
+                <h3 class="text-center mt-3 text-white">Follow Us</h3>
 
                 <div class="links">
                     <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
@@ -871,6 +888,27 @@
         </div>
 
     </footer>
+
+    <!-- cokie script -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+
+    <script>
+        // cookie
+
+        window.cookieconsent.initialise( {
+            "palette": {
+                "popup": {
+                    "background": "#000000"
+                },
+                "button": {
+                    "background": "#0d0a5a"
+                }
+            },
+            "showLink": false,
+            "theme": "classic"
+        } );
+
+    </script>
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/aos.js"></script>

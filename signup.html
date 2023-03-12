@@ -13,11 +13,11 @@
     }
 
     p {
-        color: rgb(164, 159, 208);
+        color: rgb(224, 191, 207);
     }
 
     h3 {
-        color: rgb(35, 11, 96);
+        color: rgb(194, 74, 134);
     }
 
     /* navbar */
@@ -57,39 +57,49 @@
         color: rgb(164, 159, 208);
     }
 
-    /* section 1 host-div */
-    .lead-section {
+
+    .form-section {
         width: 100%;
-        height: 100vh;
+        height: fit-content;
         background-image: url("image/lc bg2.jpg");
         background-size: cover;
         background-position: center;
     }
 
-    .lead-section .lead-text-box .lead-text h1 {
-        font-size: 95px;
-        padding-top: 130px;
+    .form-section form {
+        padding: 200px 0 80px 0;
     }
 
-    .lead-section .lead-text-box .lead-text p a img {
-        width: 35px;
-        margin-top: 25px;
-        filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);
+    .form-section form input {
+        background: none;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid white;
+        box-shadow: none !important;
+        outline: none;
+        transition: 0.5s;
+        color: rgb(18, 11, 152);
     }
 
-    .follower-section {
-        background-image: url("image/landscape bg.jpg");
+    .form-section form input:focus {
+        outline: none;
+        background: none;
+        border-bottom: 2px solid rgb(20, 9, 56);
+        color: rgb(18, 11, 152);
+    }
+
+    .form-section form button {
+        outline: none;
+        box-shadow: none !important;
+        background-image: url("image/landscape\ bg.jpg");
         background-size: cover;
         background-position: center;
-        width: 100%;
-        height: fit-content;
-
     }
 
-    .follower-section .follower-box .follower-text h3 {
-        margin-top: 30px;
+    .form-section form .privacy a {
+        text-decoration: none;
+        color: rgb(131, 128, 168);
     }
-
 
     /* FOOTER */
     /* NEWSLETTER */
@@ -101,6 +111,7 @@
     .footer-section form label {
         color: white;
         margin-top: 50px;
+        background: black;
     }
 
     .footer-section form input {
@@ -118,7 +129,7 @@
         border-radius: none;
         box-shadow: none !important;
         outline: none !important;
-        border-bottom: 2px solid rgb(112, 6, 116);
+        border-bottom: 2px solid rgb(20, 9, 56);
     }
 
     /* contact */
@@ -149,19 +160,6 @@
 
     /* medium screen */
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .lead-section {
-            height: 50vh;
-        }
-
-        .lead-section .lead-text-box .lead-text h1 {
-            font-size: 80px;
-            padding-top: 90px;
-        }
-
-        /* section2 */
-        .follower-section {
-            background-image: url("image/portrait bg.jpg");
-        }
 
         /* footer */
         footer .contact-div img {
@@ -171,68 +169,28 @@
         footer .social .links {
             margin-left: 70px;
         }
-
     }
+
 
     /* tablet view */
     @media all and (max-width: 768px) and (max-height: 1024px) {
-        .lead-section {
-            height: 50vh;
-        }
-
-        .lead-section .lead-text-box .lead-text h1 {
-            font-size: 70px;
-            padding-top: 90px;
-        }
-
-        /* section2 */
-        .follower-section {
-            background-image: url("image/portrait bg.jpg");
-        }
 
         /* footer */
         footer .social .links {
             margin-left: 30px;
         }
-
     }
+
 
     /* LANDSCAPE VIEW*/
-    @media all and (max-width: 1024px) and (max-height: 768px) {
-        .lead-section {
-            height: 60vh;
-        }
 
-        .lead-section .lead-text-box .lead-text h1 {
-            font-size: 75px;
-            padding-top: 90px;
-        }
-
-        /* footer */
-
-        footer .social .links {
-            margin-left: 83px;
-        }
-
-    }
-
+    @media all and (max-width: 1024px) and (max-height: 768px) {}
 
 
     /* Large Mobile :480px. */
     @media only screen and (max-width: 767px) {
-        .lead-section {
+        .form-section {
             background-image: url("image/pt bg2.jpg");
-            height: 100vh;
-        }
-
-        .lead-section .lead-text-box .lead-text h1 {
-            font-size: 55px;
-            padding-top: 140px;
-        }
-
-        /* section2 */
-        .follower-section {
-            background-image: url("image/portrait bg.jpg");
         }
 
         /* footer */
@@ -243,17 +201,11 @@
         footer .social .links {
             margin-left: 110px;
         }
-
-
     }
 
 
     /* phone view */
     @media all and (max-width: 400px) and (max-height: 667px) {
-        .lead-section .lead-text-box .lead-text h1 {
-            font-size: 50px;
-            padding-top: 140px;
-        }
 
         /* footer */
         footer .contact-div img {
@@ -268,10 +220,6 @@
 
     /* LANDSCAPE VIEW */
     @media all and (max-width: 667px) and (max-height: 400px) {
-        .lead-section .lead-text-box .lead-text h1 {
-            font-size: 50px;
-            padding-top: 50px;
-        }
 
         /* footer */
         footer .contact-div img {
@@ -294,19 +242,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRIDTEK</title>
+
+    <!-- web logo -->
+    <link rel="icon" href="image/icon.jpg" class="img-fluid">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- cookie  -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
-<!-- web logo -->
-<link rel="icon" href="image/icon.jpg" class="img-fluid">
-
-
-<!-- fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
-
-<!-- <link rel="stylesheet" href="css/style.css"> -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/aos.css">
 
 <body>
 
@@ -363,50 +316,120 @@
         </div>
     </nav>
 
-    <!-- section 1 host-div-->
-    <section class="container-fluid lead-section">
 
-        <div class="row p-5 lead-text-box">
+    <section class="form-section container-fluid">
 
-            <div class="col-md-12 lead-text mt-5">
-                <h1 class="text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
-                    data-aos-once="true">Listing</h1>
-                <p class="text-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
-                    data-aos-once="true">Listing / <a class="text-decoration-none text-white"
-                        href="gridtek.html">Home</a>
-                </p>
-                <p class="text-center" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
-                    data-aos-once="true"><a href="#follower"><img src="image/arrow-down-circle.svg" alt="img-fluid"></a>
-                </p>
-            </div>
+        <!-- form section -->
+        <div id="" class="">
+
+            <form action="" method="" class=" row g-3 form needs-validation px-5" novalidate
+                enctype="multipart/formm-data">
+                <h1 class="text-center text-white">Signup To Gridtek</h1>
+                <div id="column1" class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Full Name</label>
+                    <input name="fname" type="text" class="form-control" id="validationCustom01" required
+                        placeholder="Mark Look">
+
+                    <div class="invalid-feedback">
+                        This field is required
+                    </div>
+                </div>
+
+                <div id="column2" class="col-md-4">
+                    <label for="validationCustom02" class="form-label">User Name</label>
+                    <input name="Uname" type="text" class="form-control" id="validationCustom02" required
+                        placeholder="@marki_234">
+
+                    <div class="invalid-feedback">
+                        please provide a user name
+                    </div>
+                </div>
+
+                <div id="column3" class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <input name="email" placeholder="mark@gmail.com" type="email" class="form-control"
+                            id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email address.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">Country</label>
+                    <input name="country" placeholder="Canada" type="text" class="form-control" id="validationCustom03"
+                        required>
+                    <div class="invalid-feedback">
+                        This field is required
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">Phone Number</label>
+                    <input name="phoneNO" type="tell" class="form-control" id="validationCustom03" required
+                        placeholder="(+000) 000 000 0000">
+                    <div class="invalid-feedback">
+                        This field is required
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">Address</label>
+                    <input name="add" type="text" class="form-control" id="validationCustom04" required>
+                    <div class="invalid-feedback">
+                        This field is required
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">Zip Code</label>
+                    <input name="zipcode" placeholder="721 2771" type="text" class="form-control"
+                        id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        This field is required
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationpassword" class="form-label">Password</label>
+                    <input name="pwd" placeholder="password must contain 5 characters and symbols or above"
+                        type="password" id="validationpassword" class="form-control" required>
+                    <div class="invalid-feedback">
+                        please provide your password.
+                    </div>
+                </div>
+
+                <div class="col-12 privacy">
+                    <a href="https://www.freeprivacypolicy.com/live/a15513a2-d266-438a-9539-b7916fb1d889">privacy and
+                        policy</a>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input name="agree" class="form-check-input" type="checkbox" value="agreed" id="invalidCheck"
+                            required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <button id="button" name="submit" class="btn btn-lg text-white p-2 px-5"
+                        type="submit">SIGNUP</button>
+                </div>
+
+            </form>
 
         </div>
 
     </section>
 
-    <!-- section-2 text -->
-    <section id="follower" class="container-fluid follower-section">
-
-        <div class="row p-5 follower-box">
-
-            <div class="col-md-12 follower-text">
-
-                <h3 class="text-center text-white" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
-                    data-aos-once="true">Coming Soon</h3>
-                <p class="text-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
-                    data-aos-once="true"> A website is the key to opening a deeper connection with your customers. We
-                    All of Crypto at your fingertips! Gridtek is a global listing of crypto projects and NFTs. Our
-                    platform has a search
-                    function that allows you to get the information you want, fast! Here you can access live and up to
-                    date information on
-                    projects that are important to you.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
 
     <!-- section 5 newslettter and contact -->
     <footer class="contianer-fuid footer-section bg-black p-3">
@@ -461,7 +484,6 @@
                         href="https://www.freeprivacypolicy.com/live/a15513a2-d266-438a-9539-b7916fb1d889">privacy and
                         policy</a>
                 </p>
-
                 <p style="color: rgb(202, 195, 195);" class=" text-center">Copyright &copy;
                     <script> document.write( new Date().getFullYear() ); </script>
                     Gridtek LLC. All Rights Reserved.
@@ -512,22 +534,19 @@
 
     </footer>
 
+
+
+
+
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/gridtek.js"></script>
-</body>
-
-</html>
 
 
 
-<script src="js/bootstrap.bundle.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/gridtek.js"></script>
+
 </body>
 
 </html>
