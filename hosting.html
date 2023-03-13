@@ -74,7 +74,7 @@
     .lead-section .lead-text-box .lead-text p a img {
         width: 35px;
         margin-top: 25px;
-        filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);
+        filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
     }
 
     .follower-section {
@@ -133,14 +133,13 @@
     }
 
     footer .social .links img {
-        filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);
+        filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
         width: 25px;
         margin-right: 20px;
         transition: 0.5s;
     }
 
     footer .social .links img:hover {
-        filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
         width: 27px;
     }
 
@@ -222,7 +221,7 @@
     /* Large Mobile :480px. */
     @media only screen and (max-width: 767px) {
         .lead-section {
-            background-image: url("imagept bg2.jpg");
+            background-image: url("image/pt bg2.jpg");
             height: 100vh;
         }
 
@@ -315,7 +314,7 @@
     <nav class="navbar fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="index.html"><img src="image/logo.png" class="img-fluid"></a>
-            <button style="filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);" class="navbar-toggler"
+            <button style="filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);" class="navbar-toggler"
                 type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <!-- <span class="navbar-toggler-icon text-white"></span> -->
@@ -325,7 +324,7 @@
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title text-white mx-4 mt-3" id="offcanvasNavbarLabel">GRIDTEK</h5>
-                    <button style="filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);" type="button"
+                    <button style="filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);" type="button"
                         class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body navbar-munu">
@@ -533,9 +532,11 @@
                 <h3 class="text-center mt-3 text-white">Follow Us</h3>
 
                 <div class="links">
-                    <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
-                    <a href="#"><img src="image/twitter.svg" class="img-fluid"></a>
-                    <a href="#"><img src="image/telegram.svg" class="img-fluid"></a>
+                    <p class="text-center">
+                        <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
+                        <a href="#"><img src="image/twitter.svg" class="img-fluid"></a>
+                        <a href="#"><img src="image/telegram.svg" class="img-fluid"></a>
+                    </p>
                 </div>
 
             </div>

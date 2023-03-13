@@ -13,11 +13,11 @@
     }
 
     p {
-        color: rgb(224, 191, 207);
+        color: rgb(164, 159, 208);
     }
 
     h3 {
-        color: rgb(194, 74, 134);
+        color: rgb(35, 11, 96)
     }
 
     /* navbar */
@@ -74,7 +74,7 @@
 
     .text img {
         width: 40px;
-        filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);
+        filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
     }
 
     .display .tex-container {
@@ -95,7 +95,7 @@
     .display h2 {
         font-size: 50px;
         margin: 0 0 0 190px;
-        color: rgb(224, 191, 207);
+        color: rgb(164, 159, 208);
     }
 
 
@@ -187,19 +187,17 @@
     }
 
     footer .social .links {
-        margin-left: 130px;
         margin-top: 30px;
     }
 
     footer .social .links img {
-        filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);
+        filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
         width: 25px;
         margin-right: 20px;
         transition: 0.5s;
     }
 
     footer .social .links img:hover {
-        filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
         width: 27px;
     }
 
@@ -273,9 +271,9 @@
             width: 170px;
         }
 
-        footer .social .links {
+        /* footer .social .links {
             margin-left: 70px;
-        }
+        } */
     }
 
 
@@ -330,9 +328,9 @@
         }
 
         /* footer */
-        footer .social .links {
+        /* footer .social .links {
             margin-left: 30px;
-        }
+        } */
 
     }
 
@@ -391,9 +389,9 @@
 
         /* footer */
 
-        footer .social .links {
+        /* footer .social .links {
             margin-left: 83px;
-        }
+        } */
 
     }
 
@@ -422,7 +420,7 @@
         }
 
         .text img {
-            margin-left: 150px;
+            display: none;
         }
 
         .display .tex-container {
@@ -431,12 +429,12 @@
 
         .display h1 {
             font-size: 35px;
-            margin-left: 100px;
+            margin-left: 80px;
         }
 
         .display h2 {
             font-size: 35px;
-            margin-left: 160px;
+            margin-left: 120px;
         }
 
 
@@ -460,9 +458,9 @@
             width: 170px;
         }
 
-        footer .social .links {
+        /* footer .social .links {
             margin-left: 110px;
-        }
+        } */
 
     }
 
@@ -518,9 +516,9 @@
             width: 170px;
         }
 
-        footer .social .links {
+        /* footer .social .links {
             margin-left: 63px;
-        }
+        } */
     }
 
 
@@ -564,9 +562,9 @@
             width: 170px;
         }
 
-        footer .social .links {
+        /* footer .social .links {
             margin-left: 200px;
-        }
+        } */
     }
 
 </style>
@@ -605,7 +603,7 @@
     <nav class="navbar fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="index.html"><img src="image/logo.png" class="img-fluid"></a>
-            <button style="filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);" class="navbar-toggler"
+            <button style="filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);" class="navbar-toggler"
                 type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <!-- <span class="navbar-toggler-icon text-white"></span> -->
@@ -700,7 +698,8 @@
 
             <div class="col-md-6 about-text">
 
-                <h3 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">About Us</h3>
+                <h3 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
+                    class="text-white">About Us</h3>
                 <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-once="true">We provide a
                     platform that creates a world class user experience. Our system allows you to automate
                     aspects of your
@@ -871,9 +870,10 @@
                 <h3 class="text-center mt-3 text-white">Follow Us</h3>
 
                 <div class="links">
-                    <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
-                    <a href="#"><img src="image/twitter.svg" class="img-fluid"></a>
-                    <a href="#"><img src="image/telegram.svg" class="img-fluid"></a>
+                    <p class="text-center"> <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
+                        <a href="#"><img src="image/twitter.svg" class="img-fluid"></a>
+                        <a href="#"><img src="image/telegram.svg" class="img-fluid"></a>
+                    </p>
                 </div>
 
             </div>
