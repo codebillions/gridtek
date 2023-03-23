@@ -1,237 +1,3 @@
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        font-family: 'Unbounded', cursive;
-    }
-
-    h1 {
-        color: white;
-    }
-
-    p {
-        color: rgb(224, 191, 207);
-    }
-
-    h3 {
-        color: rgb(194, 74, 134);
-    }
-
-    /* navbar */
-
-    nav {
-        padding: 20px;
-        background: none;
-    }
-
-    nav .logo {
-        width: 150px;
-    }
-
-    nav button {
-        box-shadow: none !important;
-    }
-
-
-    #offcanvasNavbar {
-        background: rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px);
-        border: none;
-        border-radius: 30px 0 0 30px;
-    }
-
-    nav .navbar-munu ul li a {
-        transition: 0.5s;
-        color: white;
-        text-decoration: none;
-    }
-
-    nav .navbar-munu ul li a:hover {
-        border: none;
-        border-bottom: 2px rgb(164, 159, 208) solid;
-        width: 80px;
-        margin-left: 10px;
-        color: rgb(164, 159, 208);
-    }
-
-
-    .form-section {
-        width: 100%;
-        height: fit-content;
-        background-image: url("image/lc bg2.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    .form-section form {
-        padding: 200px 0 80px 0;
-    }
-
-    .form-section form input {
-        background: none;
-        border: none;
-        border-radius: 0;
-        border-bottom: 2px solid white;
-        box-shadow: none !important;
-        outline: none;
-        transition: 0.5s;
-        color: rgb(18, 11, 152);
-    }
-
-    .form-section form input:focus {
-        outline: none;
-        background: none;
-        border-bottom: 2px solid rgb(20, 9, 56);
-        color: rgb(18, 11, 152);
-    }
-
-    .form-section form button {
-        outline: none;
-        box-shadow: none !important;
-        background-image: url("image/landscape\ bg.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    .form-section form .privacy a {
-        text-decoration: none;
-        color: rgb(131, 128, 168);
-    }
-
-    /* FOOTER */
-    /* NEWSLETTER */
-    .footer-section {
-        width: 100%;
-        height: fit-content;
-    }
-
-    .footer-section form label {
-        color: white;
-        margin-top: 50px;
-        background: black;
-    }
-
-    .footer-section form input {
-        border: none;
-        border-bottom: 2px solid white;
-        border-radius: none;
-        background: none;
-        outline: none;
-        color: rgb(185, 180, 180);
-        transition: 0.5s;
-    }
-
-    .footer-section form input:focus {
-        background: none;
-        border-radius: none;
-        box-shadow: none !important;
-        outline: none !important;
-        border-bottom: 2px solid rgb(20, 9, 56);
-    }
-
-    /* contact */
-    footer .contact-div img {
-        width: 250px;
-    }
-
-    footer .social .links {
-        margin-top: 30px;
-    }
-
-    footer .social .links img {
-        filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
-        width: 25px;
-        margin-right: 20px;
-        transition: 0.5s;
-    }
-
-    footer .social .links img:hover {
-        width: 27px;
-    }
-
-
-
-    /* Responsive */
-
-    /* medium screen */
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-        /* footer */
-        footer .contact-div img {
-            width: 170px;
-        }
-
-        /* footer .social .links {
-            margin-left: 70px;
-        } */
-    }
-
-
-    /* tablet view */
-    @media all and (max-width: 768px) and (max-height: 1024px) {
-
-        /* footer */
-        /* footer .social .links {
-            margin-left: 30px;
-        } */
-    }
-
-
-    /* LANDSCAPE VIEW*/
-
-    @media all and (max-width: 1024px) and (max-height: 768px) {}
-
-
-    /* Large Mobile :480px. */
-    @media only screen and (max-width: 767px) {
-        .form-section {
-            background-image: url("image/pt bg2.jpg");
-        }
-
-        /* footer */
-        footer .contact-div img {
-            width: 170px;
-        }
-
-        /* footer .social .links {
-            margin-left: 110px;
-        } */
-    }
-
-
-    /* phone view */
-    @media all and (max-width: 400px) and (max-height: 667px) {
-
-        /* footer */
-        footer .contact-div img {
-            width: 170px;
-        }
-
-        /* footer .social .links {
-            margin-left: 63px;
-        } */
-    }
-
-
-    /* LANDSCAPE VIEW */
-    @media all and (max-width: 667px) and (max-height: 400px) {
-
-        /* footer */
-        footer .contact-div img {
-            width: 170px;
-        }
-
-        /* footer .social .links {
-            margin-left: 200px;
-        } */
-    }
-
-</style>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -242,7 +8,7 @@
     <title>GRIDTEK</title>
 
     <!-- web logo -->
-    <link rel="icon" href="image/icon.jpg" class="img-fluid">
+    <link rel="icon" href="image/icn.jpg" class="img-fluid">
 
 
     <!-- fonts -->
@@ -253,6 +19,7 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- cookie  -->
     <link rel="stylesheet" type="text/css"
@@ -399,6 +166,10 @@
                 </div>
 
                 <div class="col-12 privacy">
+                    <p>Already have an account? <a class="text-primary" href="signin.html">Signin</a></p>
+                </div>
+
+                <div class="col-12 privacy">
                     <a href="https://www.freeprivacypolicy.com/live/a15513a2-d266-438a-9539-b7916fb1d889">privacy and
                         policy</a>
                 </div>
@@ -418,7 +189,7 @@
 
 
                 <div class="col-12">
-                    <button id="button" name="submit" class="btn btn-lg text-white p-2 px-5" type="submit">SIGN
+                    <button id="button" name="submit" class="btn btn-lg text-black p-2 px-5" type="submit">SIGN
                         UP</button>
                 </div>
 
@@ -430,7 +201,7 @@
 
 
     <!-- section 5 newslettter and contact -->
-    <footer class="contianer-fuid footer-section bg-black p-3">
+    <footer class="contianer-fuid footer-section p-3">
 
         <h1 class="text-center pt-5">Subscribe To Our Newsletter</h1>
 
@@ -454,35 +225,33 @@
 
             </div>
 
-            <div class="cl-md-12">
-                <button type="submit" class="btn btn-sm" style="background-image: url('image/landscape\ bg.jpg');
-                        background-size: cover;
-                        background-position: center;">
-                    <h4 class="text-white">Subscribe</h4>
+            <div class="cl-md-12 mt-5">
+                <button type="submit" class="btn btn-lg bg-white text-black">
+                    Subscribe
                 </button>
             </div>
 
         </form>
 
-        <h1 id="contact-us" class="text-center mt-5">Contact US</h1>
+        <h1 id="contact-us" class="text-center">Contact US</h1>
 
         <div id="contact" class="row m-5">
 
             <div class="col-md-4 contact-div">
 
-                <p class="text-center"><img src="image/logo.png" class="img-fluid"></p>
+                <p class="text-left"><img src="image/logo.png" class="img-fluid"></p>
 
-                <h3 class="text-center mt-3 text-white">Get In Iouch</h3>
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                <h3 class="text-left mt-3 text-white">Get In Iouch</h3>
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="Hello@gridtek.com">Hello@gridtek.com</a>
                 </p>
 
-                <p class="text-center">
+                <p class="text-left">
                     <a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="https://www.freeprivacypolicy.com/live/a15513a2-d266-438a-9539-b7916fb1d889">privacy and
                         policy</a>
                 </p>
-                <p style="color: rgb(202, 195, 195);" class=" text-center">Copyright &copy;
+                <p style="color: rgb(202, 195, 195);" class=" text-left">Copyright &copy;
                     <script> document.write( new Date().getFullYear() ); </script>
                     Gridtek LLC. All Rights Reserved.
                 </p>
@@ -490,39 +259,36 @@
             </div>
 
             <div class="col-md-4">
-                <h3 class="text-center mt-3 text-white">Popular Tags</h3>
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
-                        href="#">Metaverse</a>
+                <h3 class="text-left mt-3 text-white">Popular Tags</h3>
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);" href="#">Metaverse</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="#">Tokenomics</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="#">Technology</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
-                        href="#">Security</a>
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);" href="#">Security</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);" href="#">
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);" href="#">
                         Crypto</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="#">Blockchain</a>
                 </p>
 
             </div>
 
             <div class="col-md-4 social">
-                <h3 class="text-center mt-3 text-white">Follow Us</h3>
+                <h3 class="text-left mt-3 text-white">Follow Us</h3>
 
                 <div class="links">
-                    <p class="text-center">
-                        <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
+                    <p class="text-left"> <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
                         <a href="#"><img src="image/twitter.svg" class="img-fluid"></a>
                         <a href="#"><img src="image/telegram.svg" class="img-fluid"></a>
                     </p>

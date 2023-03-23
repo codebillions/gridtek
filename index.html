@@ -1,575 +1,3 @@
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        font-family: 'Unbounded', cursive;
-    }
-
-    h1 {
-        color: white;
-    }
-
-    p {
-        color: rgb(164, 159, 208);
-    }
-
-    h3 {
-        color: rgb(35, 11, 96)
-    }
-
-    /* navbar */
-
-    nav {
-        padding: 20px;
-        background: none;
-    }
-
-    nav .logo {
-        width: 150px;
-    }
-
-    nav button {
-        box-shadow: none !important;
-    }
-
-
-    #offcanvasNavbar {
-        background: rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px);
-        border: none;
-        border-radius: 30px 0 0 30px;
-    }
-
-    nav .navbar-munu ul li a {
-        transition: 0.5s;
-        color: white;
-        text-decoration: none;
-    }
-
-    nav .navbar-munu ul li a:hover {
-        border: none;
-        border-bottom: 2px rgb(164, 159, 208) solid;
-        width: 80px;
-        margin-left: 10px;
-        color: rgb(164, 159, 208);
-    }
-
-    /* section-1 */
-
-    .section-1 {
-        width: 100%;
-        height: 100vh;
-        background-image: url('image/lc bg.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .text h1 {
-        font-size: 95px;
-        padding-top: 150px;
-    }
-
-    .text img {
-        width: 40px;
-        filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
-    }
-
-    .display .tex-container {
-        background: rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(3px);
-        border: none;
-        border-radius: 30px 30px 30px 30px;
-        margin-top: 150px;
-        padding: 20px;
-    }
-
-    .display h1 {
-        font-size: 60px;
-        margin: 0 0 0 55px;
-
-    }
-
-    .display h2 {
-        font-size: 50px;
-        margin: 0 0 0 190px;
-        color: rgb(164, 159, 208);
-    }
-
-
-    /* About section */
-    .about-section {
-        width: 100%;
-        height: fit-content;
-        background: black;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .about-section .about-row .about-text h3 {
-        margin-top: 50px;
-        font-size: 50px;
-    }
-
-
-    /* featu: ;re section */
-    .feature-section {
-        width: 100%;
-        height: fit-content;
-        padding: 50px;
-        background-image: url("image/landscape\ bg.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    .feature-section h1 {
-        text-align: center;
-        color: white;
-    }
-
-    .feature-section p {
-        color: rgb(192, 185, 190);
-    }
-
-    .feature-section .f-row .f-box .blur {
-        background: rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(20px);
-        border: none;
-        border-radius: 30px 30px 30px 30px;
-        margin-top: 50px;
-        -webkit-box-shadow: 1px 1px 1px rgba(33, 54, 61, 0.15);
-        box-shadow: 1px 1px 1px rgba(33, 54, 61, 0.15);
-    }
-
-    .feature-section .f-row .f-box .blur a {
-        box-shadow: none !important;
-        background-image: url("image/landscape bg.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    /* FOOTER */
-    /* NEWSLETTER */
-    .footer-section {
-        width: 100%;
-        height: fit-content;
-    }
-
-    .footer-section form label {
-        color: white;
-        margin-top: 50px;
-        background: black;
-    }
-
-    .footer-section form input {
-        border: none;
-        border-bottom: 2px solid white;
-        border-radius: none;
-        background: none;
-        outline: none;
-        color: rgb(185, 180, 180);
-        transition: 0.5s;
-    }
-
-    .footer-section form input:focus {
-        background: none;
-        border-radius: none;
-        box-shadow: none !important;
-        outline: none !important;
-        border-bottom: 2px solid rgb(20, 9, 56);
-    }
-
-    /* contact */
-    footer .contact-div img {
-        width: 250px;
-    }
-
-    footer .social .links {
-        margin-top: 30px;
-    }
-
-    footer .social .links img {
-        filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
-        width: 25px;
-        margin-right: 20px;
-        transition: 0.5s;
-    }
-
-    footer .social .links img:hover {
-        width: 27px;
-    }
-
-
-
-
-    /* Responsive */
-
-    /* medium screen */
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-        /* SECTION-1 */
-
-        .section-1 {
-            height: 50vh;
-        }
-
-        .text h1 {
-            font-size: 75px;
-            padding-top: 30px
-        }
-
-        .text p {
-            font-size: 20px;
-        }
-
-
-        .display .tex-container {
-            margin: 100PX 0 0 0;
-        }
-
-        .display h1 {
-            font-size: 30px;
-            margin-left: 70px;
-        }
-
-        .display h2 {
-            font-size: 30px;
-            margin-left: 130px;
-        }
-
-
-
-        /* About section */
-
-        .about-section {
-            background: black;
-
-        }
-
-        .about-section .about-row .about-text h3 {
-            margin-top: 0;
-            font-size: 50px;
-        }
-
-        .about-section .about-row .about-text p {
-            font-size: 20px;
-        }
-
-        .about-section .about-row .about-text {
-            width: 100%;
-        }
-
-        .about-section .about-row .about-image {
-            margin-top: 70px;
-            width: 500px;
-        }
-
-        /* footer */
-        footer .contact-div img {
-            width: 170px;
-        }
-
-        /* footer .social .links {
-            margin-left: 70px;
-        } */
-    }
-
-
-    /* tablet view */
-    @media all and (max-width: 768px) and (max-height: 1024px) {
-        .section-1 {
-            height: 50vh;
-        }
-
-        .text h1 {
-            font-size: 50px;
-            padding-top: 30px
-        }
-
-        .text p {
-            font-size: 18px;
-        }
-
-        .display .tex-container {
-            margin-top: 100px;
-        }
-
-        .display h1 {
-            font-size: 30px;
-            margin-left: 35px;
-        }
-
-        .display h2 {
-            font-size: 30px;
-            margin-left: 80px;
-        }
-
-
-        /* About section */
-
-        .about-section .about-row .about-text h3 {
-            margin-top: 0;
-            font-size: 50px;
-        }
-
-        .about-section .about-row .about-text p {
-            font-size: 18px;
-        }
-
-        .about-section .about-row .about-text {
-            width: 100%;
-        }
-
-        .about-section .about-row .about-image {
-            margin-top: 70px;
-            width: 500px;
-        }
-
-        /* footer */
-        /* footer .social .links {
-            margin-left: 30px;
-        } */
-
-    }
-
-
-    /* LANDSCAPE VIEW*/
-
-    @media all and (max-width: 1024px) and (max-height: 768px) {
-        .section-1 {
-            height: 70vh;
-        }
-
-        .text h1 {
-            font-size: 60px;
-            padding-top: 30px
-        }
-
-        .text p {
-            font-size: 23px;
-        }
-
-        .text img {
-            display: block;
-        }
-
-
-        .display .tex-container {
-            margin: 50px 0 0 0;
-        }
-
-        .display h1 {
-            font-size: 35px;
-            margin-left: 65px;
-        }
-
-        .display h2 {
-            font-size: 35px;
-            margin-left: 130px;
-        }
-
-        /* About section */
-
-        /* .about-section {} */
-
-        .about-section .about-row .about-text h3 {
-            margin-top: 50px;
-            font-size: 50px;
-        }
-
-        .about-section .about-row .about-text p {
-            font-size: 18px;
-        }
-
-        .about-section .about-row .about-image {
-            margin-top: 70px;
-        }
-
-        /* footer */
-
-        /* footer .social .links {
-            margin-left: 83px;
-        } */
-
-    }
-
-
-    /* Large Mobile :480px. */
-    @media only screen and (max-width: 767px) {
-
-        /* section-1 */
-
-        .section-1 {
-            height: fit-content;
-            background-image: url("image/pt bg.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        .text h1 {
-            font-size: 40px;
-            padding-top: 0;
-            text-align: center;
-        }
-
-        .text p {
-            text-align: center;
-            font-size: 20px;
-        }
-
-        .text img {
-            display: none;
-        }
-
-        .display .tex-container {
-            margin: 0;
-        }
-
-        .display h1 {
-            font-size: 35px;
-            margin-left: 80px;
-        }
-
-        .display h2 {
-            font-size: 35px;
-            margin-left: 120px;
-        }
-
-
-        /* About section */
-
-        /* .about-section {
-            background-image: url("image/portrait bg.jpg");
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-
-        } */
-
-        .about-section .about-row .about-text h3 {
-            margin-top: 30px;
-            font-size: 35px;
-        }
-
-        /* footer */
-        footer .contact-div img {
-            width: 170px;
-        }
-
-        /* footer .social .links {
-            margin-left: 110px;
-        } */
-
-    }
-
-
-    /* phone view */
-    @media all and (max-width: 400px) and (max-height: 667px) {
-
-        /* section-1 */
-
-        .section-1 {
-            height: 105vh;
-        }
-
-
-        .text h1 {
-            font-size: 35px;
-            padding-top: 5px;
-        }
-
-        .text img {
-            display: none;
-        }
-
-        .display .tex-container {
-            margin-top: -10%;
-        }
-
-        .display h1 {
-            font-size: 25px;
-            margin-left: 80px;
-        }
-
-        .display h2 {
-            font-size: 25px;
-            margin-left: 120px;
-        }
-
-        /* About section */
-
-        /* .about-section {
-            background-image: url("image/portrait bg.jpg");
-            text-align: center; 
-
-        } */
-
-        .about-section .about-row .about-text h3 {
-            margin-top: 0;
-            font-size: 30px;
-        }
-
-        /* footer */
-        footer .contact-div img {
-            width: 170px;
-        }
-
-        /* footer .social .links {
-            margin-left: 63px;
-        } */
-    }
-
-
-    /* LANDSCAPE VIEW */
-    @media all and (max-width: 667px) and (max-height: 400px) {
-        .section-1 {
-            height: fit-content;
-            background-image: url("image/lc bg.jpg");
-        }
-
-        .text h1 {
-            font-size: 40px;
-            padding-top: 5px;
-            text-align: left;
-        }
-
-        .text p {
-            text-align: left;
-        }
-
-        .text img {
-            display: none;
-        }
-
-        .display .tex-container {
-            width: 50%;
-        }
-
-        .display h1 {
-            font-size: 30px;
-            margin-left: 50px;
-        }
-
-        .display h2 {
-            font-size: 30px;
-            margin-left: 100px;
-        }
-
-        /* footer */
-        footer .contact-div img {
-            width: 170px;
-        }
-
-        /* footer .social .links {
-            margin-left: 200px;
-        } */
-    }
-
-</style>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -580,7 +8,7 @@
     <title>GRIDTEK</title>
 
     <!-- web logo -->
-    <link rel="icon" href="image/icon.jpg" class="img-fluid">
+    <link rel="icon" href="image/icn.jpg" class="img-fluid">
 
 
     <!-- fonts -->
@@ -589,8 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- cookie  -->
     <link rel="stylesheet" type="text/css"
@@ -655,14 +84,16 @@
 
 
     <!-- section-1 home-->
-    <section class="container-fluid section-1">
+    <section style="height: 100vh;" class="container-fluid section-1">
 
         <div class="row p-5 section-box">
 
-            <div class="col-md-8 mt-5 text">
-                <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">Get on the
-                    grid!</h1>
-                <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-once="true">Cryptocurrency
+            <div class="col-md-12 mt-5 text">
+                <h1 class="text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+                    data-aos-once="true">Get On The
+                    Grid!</h1>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
+                    data-aos-once="true">Cryptocurrency
                     is an evolving market that has the ability to transform the world. We are at the
                     forefront of this change
                     and we need direction to help navigate the complex and deep waters ahead. Gridtek looks to simplify
@@ -671,18 +102,15 @@
                     validating for
                     blockchain.</p>
 
-                <a data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" data-aos-once="true"
-                    href="#about"><img src="image/arrow-down-circle.svg" class="img-fluid"></a>
-            </div>
+                <p class="text-center mt-5">
+                    <a class="text-center mx-2 btn btn-large text-black bg-white" data-aos="fade-up"
+                        data-aos-delay="800" data-aos-duration="1000" data-aos-once="true"
+                        href="hosting.html">Hosting</a>
 
-            <div class="col-md-4 mt-5 display">
-
-                <div class="tex-container" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000"
-                    data-aos-once="true">
-                    <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true"># Grid
-                    </h1>
-                    <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true">Tek</h2>
-                </div>
+                    <a class="text-center mx-2 btn btn-large text-black bg-white" data-aos="fade-up"
+                        data-aos-delay="800" data-aos-duration="1000" data-aos-once="true"
+                        href="listing.html">Listing</a>
+                </p>
 
             </div>
 
@@ -694,13 +122,14 @@
     <!-- section-2 About-->
     <section id="about" class="container-fluid about-section">
 
-        <div class="row about-row px-5 pt-5">
+        <div class="row about-row pb-5 px-5 ">
 
-            <div class="col-md-6 about-text">
+            <div class="col-md-12 about-text">
 
                 <h3 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
-                    class="text-white">About Us</h3>
-                <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-once="true">We provide a
+                    class="text-white text-center">At Gridtek</h3>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
+                    data-aos-once="true">We provide a
                     platform that creates a world class user experience. Our system allows you to automate
                     aspects of your
                     business, customize your experience, and provides enhanced security protocols that safeguard your
@@ -708,12 +137,11 @@
                     tools you need to move forward in a rapidly changing environment. Welcome to the Gridtek experience!
                 </p>
 
-            </div>
+                <p class="text-center mt-5">
+                    <a class="text-center mx-2 btn btn-sm text-black bg-white" data-aos="fade-up" data-aos-delay="800"
+                        data-aos-duration="1000" data-aos-once="true" href="signup.html">Sign Up</a>
 
-            <div class="col-md-6 about-image">
-
-                <img data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
-                    src="image/met.png" class="img-fluid">
+                </p>
 
             </div>
 
@@ -727,18 +155,19 @@
         <h1 class="text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
             FEATURES</h1>
 
-        <div class="row f-row mx-5">
+        <div class="row f-row">
 
             <div class="col-md-4 f-box">
 
-                <div class="blur p-5" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
+                <div class="blur bg-dark p-3" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
                     data-aos-once="true">
 
                     <h1 class=" text-center">Listing</h1>
                     <p class=" text-center">All of Crypto at your fingertips! Gridtek is a global listing of
                         crypto projects and NFTs.</p>
 
-                    <p class=" text-center"><a class="btn text-white btn-lg" href="listing.html">Know More</a></p>
+                    <p class=" text-center"><a class="btn bg-white text-black btn-lg" href="listing.html">Know More</a>
+                    </p>
 
                 </div>
 
@@ -746,14 +175,15 @@
 
             <div class="col-md-4 f-box">
 
-                <div class="blur p-5" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
+                <div class="blur bg-dark p-3" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
                     data-aos-once="true">
 
                     <h1 class=" text-center">Hosting</h1>
                     <p class=" text-center">A website is the key to opening a deeper connection with your
                         customers.</p>
 
-                    <p class=" text-center"> <a class="btn text-white btn-lg" href="hosting.html">Know More</a></p>
+                    <p class=" text-center"> <a class="btn bg-white text-black btn-lg" href="hosting.html">Know More</a>
+                    </p>
 
                 </div>
 
@@ -761,14 +191,15 @@
 
             <div class="col-md-4 f-box">
 
-                <div class="blur p-5" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000"
+                <div class="blur bg-dark p-3" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000"
                     data-aos-once="true">
 
                     <h1 class=" text-center">Validating</h1>
                     <p class=" text-center">Gridtek is positioned to be a leader in the Crypto Market with
                         hight tech experience.</p>
 
-                    <p class=" text-center"> <a class="btn text-white btn-lg" href="validating.html">Know More</a></p>
+                    <p class=" text-center"> <a class="btn bg-white text-black btn-lg" href="validating.html">Know
+                            More</a></p>
 
                 </div>
 
@@ -779,7 +210,7 @@
     </section>
 
     <!-- section 5 newslettter and contact -->
-    <footer class="contianer-fuid footer-section bg-black p-3">
+    <footer class="contianer-fuid footer-section p-3">
 
         <h1 class="text-center pt-5">Subscribe To Our Newsletter</h1>
 
@@ -803,35 +234,33 @@
 
             </div>
 
-            <div class="cl-md-12">
-                <button type="submit" class="btn btn-sm" style="background-image: url('image/landscape\ bg.jpg');
-                    background-size: cover;
-                    background-position: center;">
-                    <h4 class="text-white">Subscribe</h4>
+            <div class="cl-md-12 mt-5">
+                <button type="submit" class="btn btn-lg bg-white text-black">
+                    Subscribe
                 </button>
             </div>
 
         </form>
 
-        <h1 id="contact-us" class="text-center mt-5">Contact US</h1>
+        <h1 id="contact-us" class="text-center">Contact US</h1>
 
         <div id="contact" class="row m-5">
 
             <div class="col-md-4 contact-div">
 
-                <p class="text-center"><img src="image/logo.png" class="img-fluid"></p>
+                <p class="text-left"><img src="image/logo.png" class="img-fluid"></p>
 
-                <h3 class="text-center mt-3 text-white">Get In Iouch</h3>
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                <h3 class="text-left mt-3 text-white">Get In Iouch</h3>
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="Hello@gridtek.com">Hello@gridtek.com</a>
                 </p>
 
-                <p class="text-center">
+                <p class="text-left">
                     <a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="https://www.freeprivacypolicy.com/live/a15513a2-d266-438a-9539-b7916fb1d889">privacy and
                         policy</a>
                 </p>
-                <p style="color: rgb(202, 195, 195);" class=" text-center">Copyright &copy;
+                <p style="color: rgb(202, 195, 195);" class=" text-left">Copyright &copy;
                     <script> document.write( new Date().getFullYear() ); </script>
                     Gridtek LLC. All Rights Reserved.
                 </p>
@@ -839,38 +268,36 @@
             </div>
 
             <div class="col-md-4">
-                <h3 class="text-center mt-3 text-white">Popular Tags</h3>
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
-                        href="#">Metaverse</a>
+                <h3 class="text-left mt-3 text-white">Popular Tags</h3>
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);" href="#">Metaverse</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="#">Tokenomics</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="#">Technology</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
-                        href="#">Security</a>
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);" href="#">Security</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);" href="#">
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);" href="#">
                         Crypto</a>
                 </p>
 
-                <p class="text-center"><a style="text-decoration: none; color: rgb(202, 195, 195);"
+                <p class="text-left"><a style="text-decoration: none; color: rgb(202, 195, 195);"
                         href="#">Blockchain</a>
                 </p>
 
             </div>
 
             <div class="col-md-4 social">
-                <h3 class="text-center mt-3 text-white">Follow Us</h3>
+                <h3 class="text-left mt-3 text-white">Follow Us</h3>
 
                 <div class="links">
-                    <p class="text-center"> <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
+                    <p class="text-left"> <a href="#"><img src="image/instagram.svg" class="img-fluid"></a>
                         <a href="#"><img src="image/twitter.svg" class="img-fluid"></a>
                         <a href="#"><img src="image/telegram.svg" class="img-fluid"></a>
                     </p>
